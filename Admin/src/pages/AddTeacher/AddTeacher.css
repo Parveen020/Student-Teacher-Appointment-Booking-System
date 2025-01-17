@@ -1,0 +1,83 @@
+.Add {
+    width: 70%;
+    margin-left: max(5vw, 25px);
+    margin-top: 50px;
+    color: #6d6d6d;
+    font-size: 16px;
+  }
+
+  
+  hr {
+    display: none; /* Hide any horizontal rules */
+  }
+  
+  .Add form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .form-row label {
+    flex: 1; /* Takes up equal space */
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .form-row input {
+    flex: 2; /* Takes up twice the space compared to the label */
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-row input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .Add-button {
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .Add-button:hover {
+    background-color: #0056b3;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .form-row {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .form-row label {
+      margin-bottom: 8px;
+    }
+  
+    .Add-button {
+      width: 100%;
+    }
+  }
+  

@@ -1,0 +1,95 @@
+.Container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.UpperContainer {
+    width:600px;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right:57%;
+    margin-top: 10px;
+}
+
+.UpperContainer p {
+    font-size: 30px;
+}
+
+.LowerContainer {
+    width: 100vw;
+    height:500px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width:60%;
+    height:70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -20px;
+}
+
+.left-box{
+    width:50%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upper-left{
+    height:80%;
+}
+
+.upper-left img{
+    width:100%;
+    height:100%;
+}
+
+.lower-left {
+    width:50%;
+}
+
+.lower-left button{
+    width:100%;
+    height:40px;
+    font-size: 20px;
+    border-radius: 15px;
+    border:none;
+    background-color: rgb(0, 0, 0);
+    color:white;
+    margin-bottom: 10px;
+}
+
+.lower-left button:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.right-box{
+    width: 50%;
+    height:100%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.right-box p{
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+

@@ -1,0 +1,212 @@
+.appointment-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  min-height: 630px;
+  height: calc(100vh - 100px);
+  overflow: hidden;
+}
+
+.appointment-window {
+  min-height: 500px;
+  max-height: 80vh;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.appointment-header {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.appointment-body {
+  height: calc(80vh - 100px);
+  max-height: 500px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+  overflow-y: auto; 
+  overflow-x: hidden;
+  flex-grow: 1; 
+}
+
+.appointment-header h3 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.appointment-count {
+  color: #555;
+}
+
+
+.refresh-button {
+  padding: 0.5rem 1rem;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.refresh-button:hover {
+  background-color: #e0e0e0;
+}
+
+.appointment-card {
+  margin:20px;    
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-bottom: 15px;
+  background-color: white;
+  border-radius: 8px;
+  min-height: 200px;
+}
+
+.appointment-upper-card {
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.appointment-card:last-child {
+  border-bottom: none;
+}
+
+.appointment-details {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.appointment-details h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.appointment-details p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.fix-button,
+.delete-button,
+.reject-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 30px;
+  width: 40%;
+  align-self: flex-start;
+}
+
+.reject-button {
+  margin-left: 30px;
+  margin-right: -5px;
+  background-color: rgb(200, 62, 62);
+}
+
+.fix-button:hover {
+  background-color: #45a049;
+}
+
+.reschedule-block {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 35%;
+}
+
+.date-time-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.date-time-input label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.date-time-input input {
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-button {
+  width: 40%;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 40px;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+.status-pending {
+  color: #856404;
+  background-color: #fff3cd;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.status-approved {
+  color: #155724;
+  background-color: #d4edda;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.status-rejected {
+  color: #721c24;
+  background-color: #f8d7da;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.fix-button:disabled,
+.reject-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.appointment-message {
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 20px;
+}
